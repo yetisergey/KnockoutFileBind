@@ -1,7 +1,8 @@
 ko.bindingHandlers.file = {
     init: function(element, valueAccessor, allBindings, viewModel, bindingContext) {
-		if(allBindings.get("allowed") !== undefined){
-			$(element).attr('accept', .split(','));
+		var allowed = allBindings.get("allowed");
+		if(allowed !== undefined){
+			$(element).attr('accept', allowed.split(','));
 		}
 		element.onchange = function() {
 			var file = this.files[0];
