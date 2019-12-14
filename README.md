@@ -1,4 +1,4 @@
-# knockoutfilebind
+# KnockoutFileBind
 Bind for knockout.
 
 Steps to use:
